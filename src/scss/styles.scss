@@ -1,5 +1,33 @@
+@font-face {
+	font-family: "Bootstrap-Icons";
+	src: url("../fonts/bootstrap-icons.woff") format("woff"),
+		url("../fonts/bootstrap-icons.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "B612";
+	src: url("../fonts/B612-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "B612";
+	src: url("../fonts/B612-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
 * {
+	--text-color: #000;
+	--primary-color: #38023b;
+	--secondary-color: #a288e3;
+	--tertiary-color: #bbd5ed;
+	--quad-color: #cefdff;
+	--fifth-color: #ccffcb;
 	box-sizing: border-box;
+}
+
+.body {
+	background-color: var(--tertiary-color);
 }
 
 .flex {
@@ -16,4 +44,36 @@
 
 .btn {
 	margin: 1rem;
+	border-color: var(--primary-color);
+	background-color: var(--secondary-color);
+	color: var(--text-color);
+	transition: 200ms ease-in-out;
+	max-width: 800px;
+	width: 80svh;
+	padding: 0.5rem;
+
+	&:hover {
+		color: #fff;
+		border-color: var(--secondary-color);
+		background-color: var(--primary-color);
+	}
+}
+
+.btn-pill {
+	border-radius: 9999999999px;
+	font-family: "B612", sans-serif;
+	font-weight: bold;
+	font-size: 1.25rem;
+
+	&::before {
+		font-family: Bootstrap-Icons;
+		font-weight: 400;
+		display: inline-block;
+		transform: translateY(10%);
+		margin-right: 0.5em;
+	}
+}
+
+#mastodon::before {
+	content: "\F647";
 }
