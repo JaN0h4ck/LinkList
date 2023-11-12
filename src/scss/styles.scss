@@ -28,6 +28,17 @@
 
 .body {
 	background-color: var(--tertiary-color);
+	font-family: "B612", sans-serif;
+}
+
+.title {
+	display: flex;
+	font-size: 3rem;
+	justify-content: center;
+	text-decoration: underline;
+	margin: 4rem;
+
+	animation: breathe-up-down 4s linear infinite;
 }
 
 .flex {
@@ -53,7 +64,7 @@
 	padding: 0.5rem;
 
 	&:hover {
-		color: #fff;
+		color: var(--quad-color);
 		border-color: var(--secondary-color);
 		background-color: var(--primary-color);
 	}
@@ -61,7 +72,6 @@
 
 .btn-pill {
 	border-radius: 9999999999px;
-	font-family: "B612", sans-serif;
 	font-weight: bold;
 	font-size: 1.25rem;
 
@@ -74,6 +84,53 @@
 	}
 }
 
+#portfolio::before {
+	content: "\F3EE";
+}
+
+#github::before {
+	content: "\F3ED";
+}
+
+#itchio::before {
+	content: "\F448";
+}
+
+#linkedin::before {
+	content: "\F472";
+}
+
+#travelling::before {
+	content: "\F81C";
+}
+
 #mastodon::before {
 	content: "\F647";
+}
+
+#instagram::before {
+	content: "\F437";
+	font-weight: bold;
+}
+
+@keyframes breathe-up-down {
+	0% {
+		transform: translateY(0%);
+	}
+
+	25% {
+		transform: translateY(15%);
+	}
+
+	50% {
+		transform: translateY(0%);
+	}
+
+	75% {
+		transform: translateY(-15%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
 }
