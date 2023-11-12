@@ -24,6 +24,8 @@
 	--quad-color: #cefdff;
 	--fifth-color: #ccffcb;
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .body {
@@ -111,6 +113,30 @@
 #instagram::before {
 	content: "\F437";
 	font-weight: bold;
+}
+
+.footer {
+	background-color: var(--fifth-color);
+	margin: 3rem 0 0 0;
+
+	& a {
+		text-decoration: none;
+		color: var(--primary-color);
+	}
+}
+
+.footer-content {
+	padding: 1.5rem;
+	box-shadow: 0 50vh 0 50vh var(--fifth-color);
+}
+
+#copyright {
+	font-family: Bootstrap-Icons;
+	padding-right: 0.5em;
+}
+
+.center {
+	justify-content: center;
 }
 
 @keyframes breathe-up-down {
