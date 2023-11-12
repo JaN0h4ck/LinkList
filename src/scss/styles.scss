@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-vert {
+	flex-direction: column;
+}
+
+.flex-center {
+	align-items: center;
+}
+
+.btn {
+	margin: 1rem;
+}
