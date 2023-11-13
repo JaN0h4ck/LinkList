@@ -31,6 +31,7 @@
 .body {
 	background-color: var(--tertiary-color);
 	font-family: "B612", sans-serif;
+	min-height: 100svh;
 }
 
 .title {
@@ -117,17 +118,17 @@
 
 .footer {
 	background-color: var(--fifth-color);
-	margin: 3rem 0 0 0;
+	margin: auto 0 0 0;
+	padding: 1.5rem;
+	// position: sticky;
+	// left: 50%;
+	// transform: translateX(-50%);
+	width: 100svw;
 
 	& a {
 		text-decoration: none;
 		color: var(--primary-color);
 	}
-}
-
-.footer-content {
-	padding: 1.5rem;
-	box-shadow: 0 50vh 0 50vh var(--fifth-color);
 }
 
 #copyright {
