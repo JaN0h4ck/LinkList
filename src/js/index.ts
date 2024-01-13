@@ -5,6 +5,7 @@ const linkElements = <Array<HTMLButtonElement>>[...document.querySelectorAll(".s
 const modalElement = <HTMLDivElement>document.querySelector(".modal-background");
 const continueLinkElement = <HTMLAnchorElement>document.getElementById("continue-link");
 const modalCancelButton = <HTMLButtonElement>document.querySelector(".btn.btn-pill.btn-dialogue.btn-cancel");
+const modalContent = <HTMLDivElement>document.querySelector(".modal-container");
 
 linkElements.forEach((button) => {
 	button.addEventListener("click", () => {
@@ -16,6 +17,14 @@ linkElements.forEach((button) => {
 
 modalCancelButton.addEventListener("click", () => {
 	modalElement.classList.add("hidden");
+});
+
+modalElement.addEventListener("click", (e) => {
+	modalElement.classList.add("hidden");
+});
+
+modalContent.addEventListener("click", (e) => {
+	e.stopPropagation();
 });
 
 if (copyrightSymbol != null) {
