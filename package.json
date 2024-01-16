@@ -10,8 +10,9 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@parcel/transformer-sass": "^2.10.2",
-		"parcel": "^2.10.2"
+		"@parcel/transformer-sass": "^2.11.0",
+		"parcel": "^2.11.0",
+		"parcel-namer-rewrite": "^2.10.3-rc.2"
 	},
 	"browserslist": "> 0.5%, last 2 versions, not dead"
 }
