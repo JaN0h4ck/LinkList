@@ -13,14 +13,17 @@
 		"include": [
 			".ttf$",
 			".woff$",
-			".woff2$"
+			".woff2$",
+			".xml$",
+			"CNAME$"
 		]
 	},
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.11.0",
 		"parcel": "^2.11.0",
 		"parcel-namer-hashless": "^1.0.6",
-		"parcel-namer-rewrite": "^2.10.3-rc.2"
+		"parcel-namer-rewrite": "^2.10.3-rc.2",
+		"parcel-reporter-static-files-copy": "^1.5.3"
 	},
 	"browserslist": "> 0.5%, last 2 versions, not dead"
 }
